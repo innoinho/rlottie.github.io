@@ -525,7 +525,6 @@ function onloadApiListFile(e) {
     var read = new FileReader();
     read.readAsText(file);
     read.onloadend = function () {
-      console.log(read.result);
       apiList = JSON.parse(read.result);
       createApiController();
     };
